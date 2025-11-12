@@ -107,7 +107,7 @@ export function Auth({ onAuthChange }: AuthProps) {
           </button>
         </form>
 
-        {/* <button 
+         <button 
           type="button"
           onClick={() => {
             setIsSignUp(!isSignUp);
@@ -116,7 +116,7 @@ export function Auth({ onAuthChange }: AuthProps) {
           className="toggle-auth"
         >
           {isSignUp ? 'Already have an account? Login' : "Don't have an account? Sign Up"}
-        </button> */}
+        </button> 
       </div>
     </div>
   );
