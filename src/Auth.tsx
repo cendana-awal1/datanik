@@ -20,7 +20,7 @@ export function Auth({ onAuthChange }: AuthProps) {
 
     try {
       if (isSignUp) {
-        const { data, error: signUpError } = await supabase.auth.signUp({
+        const {  error: signUpError } = await supabase.auth.signUp({
           email,
           password,
         });
