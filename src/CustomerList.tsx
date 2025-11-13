@@ -36,7 +36,7 @@ export function CustomerList({ user, onLogout }: CustomerListProps) {
     try {
       setLoading(true);
       const { data, error: fetchError } = await supabase
-        .from("pelanggan")
+        .from("customers")
         .select("*")
         .order("created_at", { ascending: false });
       if (fetchError) throw fetchError;
